@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/compose":{"guestpath":"/home/vagrant/compose","hostpath":"/home/rafael/cursos/devops/Zabbix/docker-compose","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/rafael/cursos/devops/Zabbix","disabled":false,"__vagrantfile":true}}}
