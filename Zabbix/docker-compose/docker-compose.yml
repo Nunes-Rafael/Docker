@@ -9,7 +9,8 @@ services:
       - 10051:10051
     volumes:
       - /home/rafael/cursos/devops/Zabbix:/var/lib/mysql
-    
+    networks:
+      - teste
   grafana:
     image: grafana/grafana
     ports:
@@ -18,5 +19,9 @@ services:
     environment:
       - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app
     depends_on:
-      - mysql
-      - zabbix-server
+      - zabbix-srv
+    networks:
+      - teste
+networks:
+  teste:
+    driver: bridge
